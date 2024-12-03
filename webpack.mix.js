@@ -11,4 +11,4 @@ mix
         'laravel-nova': path.join(__dirname, 'vendor/laravel/nova/resources/js/mixins/packages.js'),
         '@': path.join(__dirname, 'resources/js/')
     })
-    .nova('timothyasp/nova-badge-field')
+    .nova('timothyasp/nova-badge-field');

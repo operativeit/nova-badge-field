@@ -1,7 +1,7 @@
 export default {
     methods: {
         backgroundColor: function () {
-            let value = this.field.colorMap[this.field.value];
+            let value = this.field.colorMap[this.field.value] ?? '#c3c3c3';
 
             if (value.hasOwnProperty('background')) {
                 return value.background;
@@ -10,7 +10,7 @@ export default {
             return value;
         },
         textColor: function () {
-            let value = this.field.colorMap[this.field.value];
+            let value = this.field.colorMap[this.field.value]?? '#696969';
 
             if (value.hasOwnProperty('color')) {
                 return value.color;

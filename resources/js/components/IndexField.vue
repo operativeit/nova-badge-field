@@ -1,8 +1,8 @@
 <template>
-    <span class="rounded-full uppercase px-2 py-1 text-xs font-bold whitespace-no-wrap"
+    <span v-if="field.value" class="rounded-full uppercase px-2 py-0.5 text-xs font-bold whitespace-no-wrap"
         :class="badgeExtraClasses"
         :style="{ backgroundColor: backgroundColor(), color: textColor() }"
-    >{{ __(displayValue()) }}</span>
+    >{{ __(displayValue) }}</span>
 </template>
 
 <script>

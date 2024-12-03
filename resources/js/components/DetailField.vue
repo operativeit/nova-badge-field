@@ -1,10 +1,10 @@
 <template>
     <PanelItem :index="index" :field="field" :field-name="field.name">
         <template #value>
-            <span class="rounded-full uppercase px-2 py-1 text-xs font-bold whitespace-no-wrap"
+            <span v-if="field.value" class="rounded-full uppercase px-2 py-1 text-xs font-bold whitespace-no-wrap"
                   :class="badgeExtraClasses"
                   :style="{ backgroundColor: backgroundColor(), color: textColor() }"
-            >{{ __(displayValue()) }}</span>
+            >{{ __(displayValue) }}</span>
         </template>
     </PanelItem>
 </template>

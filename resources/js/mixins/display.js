@@ -6,13 +6,11 @@ export default {
             }
 
             return {[this.field.extraClasses]: true};
-        }
-    },
-    methods: {
+        },
         displayValue: function () {
             if (this.field.useLabel) {
                 let result = _.find(this.field.options, {value: this.field.value})
-                if (result.label !== undefined) {
+                if (result?.label !== undefined) {
                     return result.label;
                 }
             }
